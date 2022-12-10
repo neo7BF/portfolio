@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio di Forcuti Alessandro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome CDN -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <!-- linking custom css file -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .card {
+        width: 20rem;
+        margin: 2rem;
+    }
+    .image-grid-container {
+        display: grid;
+    }
+    img {
+        width: 100%;
+    }
+</style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll navbarDark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Forcuti Alessandro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Su di me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competenze">Competenze</a>                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servizi">Servizi</a>                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coffee">Coffee</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <div class="row mt-4">
+                <div class="col-lg-4 text-center">
+                    <img src="https://via.placeholder.com/203/201" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <h1 class="text-left">Su di me</h1>
+                    <p>Sono un Full-Stack Developer spacializzato in linguaggio Java  e framworks come React e Angular, iniziai il mio percoso 20 anni fa.</p>
+                    <p>Appassionato di fisica e tecnologia, mi piace passare del tempo sui social per aiutare chi sta iniziando il suo percorso e generalmente chi ha un problema tecnico da risolvere.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="competenze">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Competenze</h1>                
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <h4 class="card-title mt-3">Back-End</h4>                        
+                        <div class="row text-center">
+                            <div class="col">
+                                <img style="width: 35%;" src="../portfolio_website_fcc-master/images/be/java2.png" />
+                            </div>
+                        </div>
+                        <div class="row text-center">                            
+                            <div class="col">
+                                <img style="width: 70%;" src="../portfolio_website_fcc-master/images/be/maven.png" />                                                        
+                            </div>
+                            <div class="col">
+                                <img style="width: 70%;" src="../portfolio_website_fcc-master/images/be/spring.png" />                                                        
+                            </div>                            
+                        </div>
+                        <br />  
+                        <div class="row text-center">                            
+                            <div class="col">
+                                <img img style="width: 40%;" src="../portfolio_website_fcc-master/images/be/nodejs.png" />                            
+                            </div>
+                        </div>                        
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <h4 class="card-title mt-3">Front-End</h4>
+                            <div class="row text-center align-items-center">
+                                <div class="col">
+                                    <img style="width: 50%;" src="../portfolio_website_fcc-master/images/fe/react.png" />
+                                </div>
+                                <div class="col">
+                                    <img style="width: 50%;" src="../portfolio_website_fcc-master/images/fe/angular.png" />
+                                </div>
+                            </div>
+                            <div class="row text-center align-items-center">
+                                <div class="col">
+                                    <img style="width: 20%;" src="../portfolio_website_fcc-master/images/fe/js.png" />
+                                </div>
+                            </div>                            
+                            <div class="row text-center align-items-center">                
+                                <div class="col">
+                                    <img style="width: 50%;" src="../portfolio_website_fcc-master/images/fe/html5.png" />
+                                </div>
+                                <div class="col">
+                                    <img style="width: 40%;" src="../portfolio_website_fcc-master/images/fe/css.png" />
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <h4 class="card-title mt-3">Tools</h4>
+                            <div class="row">                            
+                                <div class="col">
+                                    <img src="../portfolio_website_fcc-master/images/tools/sts4.png" />
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row text-center">                                                            
+                                <div class="col">
+                                    <img style="width: fit-content" src="../portfolio_website_fcc-master/images/tools/vscode.png" />
+                                </div>                            
+                            </div>                            
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section-->
+    <section id="servizi">
+        <div class="container">
+            <h1 class="text-center">Servizi</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText text-center">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Tech Assistance</h4>
+                            <p class="card-text mt-3 text-center">Posso fornire assistenza sia social che con collegamento remoto al vostro PC su vari temi tecnici riguardanti lo sviluppo del software in generale e problematiche inerenti l'uso del PC</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText text-center">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Social Invitations</h4>
+                            <p class="card-text mt-3 text-center">Produco biglietti o inviti digitali facilmente condivisibili sui social</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText text-center">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-pen-nib"></i>
+                            <h4 class="card-title mt-3">Tecnical Writer</h4>
+                            <p class="card-text mt-3 text-center">Ho redatto alcuni articoli su medium</p>
+                        </div>
+                    </div>  
+                </div>                
+            </div>
+        </div>
+    </section>  
+
+    <!-- services section-->
+    <section id="coffee">
+        <div class="container">
+            <h1 class="text-center">Offrimi un caffè</h1>
+            <div class="row text-center">
+                <div class="col-lg-6 mt-6">
+                    <a href="https://www.amazon.it/Buono-Regalo-Amazon-Digitale-Amazon/dp/B07SP4WQVJ">
+                        <img class="card-img-top" style="width: 50%" src="../portfolio_website_fcc-master/images/buono-regalo-amazon.jpg" />
+                    </a>
+                </div>
+                <div class="col-lg-6 mt-6">
+                    <a href="https://www.paypal.com/paypalme/AlessandroForcuti">
+                        <img class="card-img-top" style="width: 56%" src="../portfolio_website_fcc-master/images/qrcode-paypal.png" />
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </section>     
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/forcuti.alessandro" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/neo7bf" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/alessandro-forcuti-376544a2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/neo7BF" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
