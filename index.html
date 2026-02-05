@@ -33,38 +33,37 @@
     }
 	  
 	.photo-container {
-	  position: relative;
-	  display: inline-block;
-	  width: 100%;
-	  max-width: 400px; /* Limita la grandezza su desktop */
-	  aspect-ratio: 1 / 1; /* Forza la forma quadrata */
-	  height: auto; /* Sovrascrive eventuali altezze fisse */
-	  overflow: visible; /* Fondamentale per far vedere l'avatar fuori dai bordi */
-	  border-radius: 0; /* Rimosso da qui e spostato sull'immagine */
+	    position: relative;
+	    display: inline-block;
+	    width: 100%;
+	    max-width: 400px;
+	    aspect-ratio: 1 / 1;
+	    height: auto;
+	    overflow: visible; /* Indispensabile per non tagliare l'avatar */
 	}
 
+	/* Immagine principale con ritaglio e inquadratura */
 	.main-photo {
-	  width: 100%;
-	  height: 100%;
-	  object-fit: cover; /* Evita distorsioni dell'immagine */
-	  border-radius: 50%; /* Crea il crop circolare qui */
-	  display: block;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	    object-position: 50% 14%; /* Risolve il taglio sulla fronte */
+	    border-radius: 50%;
+	    display: block;
 	}
 
+	/* Avatar posizionato sul bordo */
 	.avatar {
-	  position: absolute;
-	  width: 15%; /* Dimensione proporzionale alla foto grande */
-	  height: 15%;
-	  border-radius: 50%;
-	  border: 4px solid white; /* Crea lo stacco visivo */
-	  z-index: 10; /* Assicura che stia sopra la foto principale */
-	  
-	  /* Posizionamento a cavallo del bordo */
-	  bottom: 10%; /* Regola l'altezza lungo la curva */
-	  right: 10%;  /* Regola la posizione orizzontale lungo la curva */
-	  transform: translate(50%, 50%); /* Lo centra esattamente sul confine */
-	  
-	  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Opzionale: aggiunge profondità */
+	    position: absolute;
+	    width: 15%;
+	    height: 15%;
+	    bottom: 15%;
+	    right: 15%;
+	    transform: translate(50%, 50%); /* Lo posiziona a cavallo del confine */
+	    border-radius: 50%;
+	    border: 4px solid white;
+	    z-index: 10;
+	    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	}
 
 </style>
